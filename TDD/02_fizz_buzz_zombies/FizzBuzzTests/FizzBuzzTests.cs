@@ -6,6 +6,21 @@
 */
 
 /*
+Fake it till you make it
+*/
+
+/*
+# ZOMBIES
+Z - Zero                          
+O - One                           
+M - Many
+B - Boundary Behavior
+I - Interface Definition          
+E - Exercise Exception Behavior
+S - Simple
+*/
+
+/*
 PROBLEM REQUIREMENTS:
 - For multiples of three set “Fizz” instead of the number
 - For the multiples of five set “Buzz”. 
