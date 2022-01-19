@@ -15,19 +15,12 @@ Console.WriteLine("Hello, World!");
 
 - bool
 - byte
-- sbyte
 - char
 - decimal
 - double
 - float
 - int
-- uint
-- nint
-- nuint
 - long
-- ulong
-- short
-- ushort
 
 
 # Reference Types
