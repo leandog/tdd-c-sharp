@@ -1,23 +1,33 @@
-# ATDD-TDD-TypeScript: TDD - 00 Hello World TypeScript
+# TDD - C Sharp
 
-'Hello, World!' to demostrate TypeScript language features.
+'Hello, World!' to demostrate C# language features.
 
-# Prerequisites
+## Prerequisites
 
 - [Git](https://github.com/)
-- [NodeJS](https://nodejs.org/en/download/) installed globally in the system.
-- [TypeScript](https://www.typescriptlang.org/)
+- [.Net Core](https://dotnet.microsoft.com/en-us/download/)
 - [VS Code](https://code.visualstudio.com/)
-  - [LiveShare](https://code.visualstudio.com/learn/collaboration/live-share)
+  - [LiveShare (Optional)](https://code.visualstudio.com/learn/collaboration/live-share)
+
+## Recommended Visual Studio Code Extensions
+
+- C# for Visual Studio Code (powered by OmniSharp)
+
 
 # Setup
+
+Project created dotnet cli
+
+```bash
+~ cd HelloWorld
+~ dotnet new console
+```
 
 ## In the termal build and run TypeScript file
 
 ```bash
-~ yarn install
-~ tsc hello_world.ts
-~ node dist/hello_world.js
+~ cd HelloWorld
+~ dotnet run
 ```
 
 # VSCode Runtime Configuration
@@ -45,6 +55,3 @@
 ![](/assets/dev3l-solutions-logo-lean-dog.png)
 
 
-## Recommended Visual Studio Code Extensions
-
-- C# for Visual Studio Code (powered by OmniSharp)

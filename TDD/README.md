@@ -1,12 +1,11 @@
-# ATDD-TDD-TypeScript: TDD
+# TDD - C Sharp
 
 ## Prerequisites
 
 - [Git](https://github.com/)
-- [NodeJS](https://nodejs.org/en/download/) installed globally in the system.
-- [TypeScript](https://www.typescriptlang.org/)
+- [.Net Core](https://dotnet.microsoft.com/en-us/download/)
 - [VS Code](https://code.visualstudio.com/)
-  - [LiveShare](https://code.visualstudio.com/learn/collaboration/live-share)
+  - [LiveShare (Optional)](https://code.visualstudio.com/learn/collaboration/live-share)
 
 ---
 
