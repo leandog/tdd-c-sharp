@@ -2,6 +2,7 @@
 
 'Hello, World!' to demostrate C# language features.
 
+
 ## Prerequisites
 
 - [Git](https://github.com/)
@@ -30,22 +31,30 @@ Project created dotnet cli
 ~ dotnet run
 ```
 
+
 # VSCode Runtime Configuration
 
 ```json
-# $NODE = which node
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}/hello_world.ts",
-      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-      "runtimeExecutable": "$NODE"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/net6.0/HelloWorld.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
 }
 
 ```
