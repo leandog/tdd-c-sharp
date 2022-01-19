@@ -17,8 +17,8 @@ PROBLEM REQUIREMENTS:
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace FizzBuzz { 
-
+namespace FizzBuzz
+{
     [TestClass]
     public class FizzBuzzTests
     {
