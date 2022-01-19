@@ -13,50 +13,17 @@
 ## Recommended Visual Studio Code Extensions
 
 - C# for Visual Studio Code (powered by OmniSharp)
+- Test Explorer for .NET Core (MSTest, xUnit, NUnit)
 
 
-# Setup
+# Run
 
-Project created dotnet cli
-
-```bash
-~ cd HelloWorld
-~ dotnet new console
-```
+Project created using dotnet cli
 
 ## In the termal build and run TypeScript file
 
 ```bash
-~ cd HelloWorld
 ~ dotnet run
-```
-
-
-# VSCode Runtime Configuration
-
-```json
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/net6.0/HelloWorld.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopAtEntry": false
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach"
-        }
-    ]
-}
-
 ```
 
 ---
