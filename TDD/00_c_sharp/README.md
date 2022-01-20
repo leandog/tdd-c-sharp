@@ -26,6 +26,18 @@ Project created using dotnet cli
 ~ dotnet run
 ```
 
+
+# Visual Studio Code - Code Coverage
+
+1. Add Extension: .NET Core Test Explorer
+  - `"dotnet-test-explorer.testProjectPath": "**/**Tests.csproj"`
+  - `"dotnet-test-explorer.testArguments": "--collect:\"XPlat Code Coverage\""`
+
+2. Add Extension: Coverage Gutters
+  - `"coverage-gutters.showLineCoverage": true`
+  - `"coverage-gutters.coverageFileNames": ["coverage.cobertura.xml"]`
+
+  
 ---
 
 ![](/assets/dev3l-solutions-logo-lean-dog.png)

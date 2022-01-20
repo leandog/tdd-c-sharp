@@ -75,15 +75,16 @@ We can briefly summarize the scoring for this form of bowling:
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Bowling;
-
-[TestClass]
-public class BowlingTests
+namespace Bowling
 {
-    [TestMethod]
-    public void TestBowling()
+    [TestClass]
+    public class BowlingTests
     {
-        // var bowling = new Bowling()
-        Assert.IsTrue(false, "Turn the checked value to true to pass this test");
+        [TestMethod]
+        public void TestBowling()
+        {
+            // var bowling = new Bowling()
+            Assert.IsTrue(false, "Turn the checked value to true to pass this test");
+        }
     }
 }

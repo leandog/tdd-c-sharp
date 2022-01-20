@@ -53,15 +53,16 @@ PROBLEM REQUIREMENTS:
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace RomanCalculator;
-
-[TestClass]
-public class RomanCalculatorTests
+namespace RomanCalculator
 {
-    [TestMethod]
-    public void TestRomanCalculator()
+    [TestClass]
+    public class RomanCalculatorTests
     {
-        // var romanCalculator = new RomanCalculator();
-        Assert.IsTrue(false, "Turn the checked value to true to pass this test");
+        [TestMethod]
+        public void TestRomanCalculator()
+        {
+            // var romanCalculator = new RomanCalculator();
+            Assert.IsTrue(false, "Turn the checked value to true to pass this test");
+        }
     }
 }
