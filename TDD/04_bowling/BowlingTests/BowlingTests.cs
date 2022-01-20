@@ -11,11 +11,7 @@ Fake it till you make it
 
 /*
 # ZOMBIES
-Z - Zero                          
-O - One                           
-M - Many
 B - Boundary Behavior
-I - Interface Definition          
 E - Exercise Exception Behavior
 S - Simple
 */
@@ -75,16 +71,70 @@ We can briefly summarize the scoring for this form of bowling:
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+
 namespace Bowling
 {
     [TestClass]
     public class BowlingTests
     {
         [TestMethod]
-        public void TestBowling()
+        public void TestAllGutterBalls()
         {
-            // var bowling = new Bowling()
-            Assert.IsTrue(false, "Turn the checked value to true to pass this test");
+            // Arrange
+            var expectedResult = 0;
+            var rolls = "-- -- -- -- -- -- -- -- -- --";
+
+            // Act
+            var bowling = new Bowling(rolls);
+            var result = bowling.DeriveScore();
+
+            // Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        public void TestOnePin()
+        {
+            // Arrange
+            var expectedResult = 1;
+            var rolls = "1- -- -- -- -- -- -- -- -- --";
+
+            // Act
+            var bowling = new Bowling(rolls);
+            var result = bowling.DeriveScore();
+
+            // Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        public void TestNine()
+        {
+            // Arrange
+            var expectedResult = 9;
+            var rolls = "-- -- -- -- -- 9- -- -- -- --";
+
+            // Act
+            var bowling = new Bowling(rolls);
+            var result = bowling.DeriveScore();
+
+            // Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        public void TestSumFrame()
+        {
+            // Arrange
+            var expectedResult = 4;
+            var rolls = "13 -- -- -- -- -- -- -- -- --";
+
+            // Act
+            var bowling = new Bowling(rolls);
+            var result = bowling.DeriveScore();
+
+            // Assert
+            Assert.AreEqual(expectedResult, result);
         }
     }
 }

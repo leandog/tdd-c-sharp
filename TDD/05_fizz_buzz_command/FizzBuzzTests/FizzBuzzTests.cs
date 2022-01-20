@@ -20,11 +20,24 @@ namespace FizzBuzz
         {
             var expected = new List<string> {
                 "1", "2", "Fizz", "4", "Buzz",
-                "Fizz", "7", "8", "Fizz", "Buzz",
-                "11", "Fizz", "13", "14", "FizzBuzz"
+                "Fizz", "Pop", "8", "Fizz", "Buzz",
+                "11", "Fizz", "13", "Pop", "FizzBuzz"
             };
 
             var result = new FizzBuzz().Calculate(15);
+
+            CollectionAssert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void TestPoP()
+        {
+            var expected = new List<string> {
+                "1", "2", "Fizz", "4", "Buzz",
+                "Fizz", "Pop"
+            };
+
+            var result = new FizzBuzz().Calculate(7);
 
             CollectionAssert.AreEqual(expected, result);
         }
