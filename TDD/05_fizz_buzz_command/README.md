@@ -2,19 +2,6 @@
 
 Fizz Buzz in C#.
 
-## Prerequisites
-
-- [Git](https://github.com/)
-- [.Net Core](https://dotnet.microsoft.com/en-us/download/)
-- [VS Code](https://code.visualstudio.com/)
-
-## Recommended Visual Studio Code Extensions
-
-- C#
-- .NET Core Test Explorer
-- Coverage Gutters
-- LiveShare
-
 
 # Fizz Buzz
 
@@ -42,17 +29,6 @@ Project created using dotnet cli
 ```bash
 ~ dotnet test
 ```
-
-
-# Visual Studio Code - Code Coverage
-
-1. Add Extension: .NET Core Test Explorer
-  - `"dotnet-test-explorer.testProjectPath": "**/**Tests.csproj"`
-  - `"dotnet-test-explorer.testArguments": "--collect:\"XPlat Code Coverage\""`
-
-2. Add Extension: Coverage Gutters
-  - `"coverage-gutters.showLineCoverage": true`
-  - `"coverage-gutters.coverageFileNames": ["coverage.cobertura.xml"]`
 
 
 ---

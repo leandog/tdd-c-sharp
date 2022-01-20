@@ -2,12 +2,30 @@
 
 This is a hands-on workshop covering TDD in C Sharp.
 
-# Prerequisites
+## Prerequisites
 
 - [Git](https://github.com/)
 - [.Net Core](https://dotnet.microsoft.com/en-us/download/)
 - [VS Code](https://code.visualstudio.com/)
   - [LiveShare (Optional)](https://code.visualstudio.com/learn/collaboration/live-share)
+
+## Recommended Visual Studio Code Extensions
+
+- C#
+- .NET Core Test Explorer
+- Coverage Gutters
+- LiveShare
+
+## Visual Studio Code - Code Coverage
+
+1. Add Extension: .NET Core Test Explorer
+  - `"dotnet-test-explorer.testProjectPath": "**/**Tests.csproj"`
+  - `"dotnet-test-explorer.testArguments": "--collect:\"XPlat Code Coverage\""`
+
+2. Add Extension: Coverage Gutters
+  - `"coverage-gutters.showLineCoverage": true`
+  - `"coverage-gutters.coverageFileNames": ["coverage.cobertura.xml"]`
+
 
 # TDD TRAINING
 
@@ -42,6 +60,7 @@ Participants will become familiar with:
 
 - Quality Assurance / Test Automation (Technical)
 - Engineers / Developers
+
 
 ---
 
