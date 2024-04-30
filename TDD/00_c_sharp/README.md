@@ -7,9 +7,10 @@
 
 Project created using dotnet cli
 
-## In the termal build and run TypeScript file
+## In the terminal build and run C# file
 
 ```bash
+~ cd HelloWorld
 ~ dotnet run
 ```
 
