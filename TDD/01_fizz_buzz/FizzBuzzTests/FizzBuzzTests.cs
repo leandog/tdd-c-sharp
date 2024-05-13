@@ -7,12 +7,11 @@
 
 /*
 PROBLEM REQUIREMENTS:
+- For all whole numbers from 1 to 100
 - For multiples of three set “Fizz” instead of the number
 - For the multiples of five set “Buzz”. 
 - For numbers which are multiples of both three and five set “FizzBuzz“.
-- Otherwise set the ordinal number
-**Upper bound**: 15
-**Example output**: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
+- Otherwise set the ordinal number (as a String)
 */
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
